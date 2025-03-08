@@ -44,7 +44,7 @@ python wordgeo.py decode -k <KEY> --words 3 "covary-britt-kydd"
 You can import this into your scripts (make sure the files are in the same folder as your script) so you can do conversions on the fly.
 
 > [!IMPORTANT]
-> If you include this in your scripts as an import, consider using `argv` to set the key. This is better OPSEC as it won't be hard coded and will only show up in the process list while running (remember to send `.bash_history` to `/dev/null`
+> If you include this in your scripts as an import, consider using `argv` to set the key. This is better OPSEC as it won't be hard coded and will only show up in the process list while running (remember to send `.bash_history` to `/dev/null`)
 
 ```python
 >>> import wordgeo
