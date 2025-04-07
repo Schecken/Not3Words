@@ -1,20 +1,20 @@
 #!/usr/bin/env python3
 """
-wordgeo: Human-readable addresses for every 3x3m square on the earth's surface.
+not3words: Human-readable addresses for every 3x3m square on the earth's surface.
 Provides both a command-line interface and an API for import into other scripts.
 
 Usage (command-line):
   To encode:
-    python wordgeo.py encode -k <KEY> --words 3 "-33.867480754852295,151.20700120925903"
+    python not3words.py encode -k <KEY> --words 3 "-33.867480754852295,151.20700120925903"
   To decode:
-    python wordgeo.py decode -k <KEY> --words 3 "covary-britt-kydd"
+    python not3words.py decode -k <KEY> --words 3 "covary-britt-kydd"
 
 Usage (import):
-    >>> import wordgeo
+    >>> import not3words
     >>> sydney = "-33.867480754852295, 151.20700120925903"
-    >>> print(wordgeo.three_words(sydney))
+    >>> print(not3words.three_words(sydney))
     covary-britt-kydd
-    >>> print(wordgeo.decode("covary-britt-kydd"))
+    >>> print(not3words.decode("covary-britt-kydd"))
     (-33.867480754852295, 151.20700120925903)
 """
 
